@@ -22,7 +22,7 @@ jobs:
               uses: jfrog/setup-jfrog-cli@v4
               id: setup-cli
               env:
-                JF_URL: https://${{ vars.JF_URL }}
+                JF_URL: http://${{ vars.JF_URL }}
                 
               with:
                   oidc-provider-name: testoidcgithub
